@@ -26,8 +26,8 @@
 
 @property (strong, nonatomic) EbayProduct* product;
 
-@property (weak, nonatomic) IBOutlet UIImageView *productImageView;
-@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
-@property (weak, nonatomic) IBOutlet UILabel *lblSellingType;
+@property (weak, nonatomic) IBOutlet UIImageView *productGalleryImageView;
+@property (weak, nonatomic) IBOutlet UILabel *lblProductTitle;
+@property (weak, nonatomic) IBOutlet UILabel *lblProductSellingType;
 
 @end

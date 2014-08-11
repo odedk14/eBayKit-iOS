@@ -20,8 +20,12 @@
 //      SOFTWARE.
 
 #import "ViewController.h"
+#import "ProductsViewController.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UISwitch *includeSellerSwitch;
+@property (weak, nonatomic) IBOutlet UITextField *txtKeyword;
 
 @end
 
@@ -31,6 +35,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ProductsViewController* pvc = [segue destinationViewController];
+    pvc.keywords = self.txtKeyword.text;
+    pvc.includeSellerInfo = self.includeSellerSwitch.isOn;
 }
 
 - (void)didReceiveMemoryWarning

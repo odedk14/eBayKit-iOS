@@ -93,10 +93,10 @@
     
     EbayProduct* product = [self.products objectAtIndex:indexPath.row];
     cell.product = product;
-    [cell.productImageView setImageWithURL:[NSURL URLWithString:product.galleryURL]];
+    [cell.productGalleryImageView setImageWithURL:[NSURL URLWithString:product.galleryURL]];
     
-    [cell.lblTitle setText:product.title];
-    [cell.lblTitle sizeToFit];
+    [cell.lblProductTitle setText:product.title];
+    [cell.lblProductTitle sizeToFit];
     
     NSString* type;
     switch (product.listingInfo.listingType) {
@@ -117,7 +117,7 @@
             break;
     }
     
-    [cell.lblSellingType setText:type];
+    [cell.lblProductSellingType setText:type];
     
     return cell;
 }

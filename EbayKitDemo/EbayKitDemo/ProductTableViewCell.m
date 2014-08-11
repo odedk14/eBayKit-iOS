@@ -37,7 +37,7 @@
 {
 }
 
-- (IBAction)linkToProductClicked:(id)sender {
+- (IBAction)linkToProduct:(id)sender {
     NSURL *url = [NSURL URLWithString:self.product.viewItemURL];
     
     if ([[UIApplication sharedApplication] canOpenURL:url])
