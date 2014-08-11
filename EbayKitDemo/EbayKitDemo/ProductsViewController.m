@@ -93,6 +93,8 @@
     
     EbayProduct* product = [self.products objectAtIndex:indexPath.row];
     cell.product = product;
+    
+    [cell.productGalleryImageView setImage:nil];
     [cell.productGalleryImageView setImageWithURL:[NSURL URLWithString:product.galleryURL]];
     
     [cell.lblProductTitle setText:product.title];
