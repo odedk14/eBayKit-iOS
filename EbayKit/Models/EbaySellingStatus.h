@@ -19,24 +19,26 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
+#import <Foundation/Foundation.h>
+#import "EbayPrice.h"
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad
+typedef enum
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+    EbayKitSellingStateActive,
+    EbayKitSellingStateCanceled,
+    EbayKitSellingStateEnded,
+    EbayKitSellingStateEndedWithSales,
+    EbayKitSellingStateEndedWithoutSales,
+} EbayKitSellingState;
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+@interface EbaySellingStatus : NSObject
+
+@property (nonatomic, readonly) NSInteger bidCount;
+@property (nonatomic) EbayPrice* convertedCurrentPrice;
+@property (nonatomic) EbayPrice* currentPrice;
+@property (nonatomic) EbayKitSellingState sellingState;
+@property (nonatomic) NSString* timeLeft;
+
+- (id) initWithInfo:(NSDictionary*)info;
 
 @end

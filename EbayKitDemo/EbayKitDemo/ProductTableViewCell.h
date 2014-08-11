@@ -19,24 +19,15 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
+#import "EbayProduct.h"
 
-@interface ViewController ()
+@interface ProductTableViewCell : UITableViewCell
 
-@end
+@property (strong, nonatomic) EbayProduct* product;
 
-@implementation ViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+@property (weak, nonatomic) IBOutlet UIImageView *productImageView;
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+@property (weak, nonatomic) IBOutlet UILabel *lblSellingType;
 
 @end

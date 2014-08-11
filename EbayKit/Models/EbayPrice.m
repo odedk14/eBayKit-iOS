@@ -19,24 +19,25 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
+#import "EbayPrice.h"
+#import "EbayModel.h"
 
-@interface ViewController ()
+@implementation EbayPrice
 
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad
+- (id)initWithInfo:(NSDictionary *)info
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self = [super init];
+    BOOL infoExists = IKNotNull(info);
+    
+    if (self && infoExists)
+    {
+        _cost = [[info valueForKey:kValue] floatValue];
+        _currency = [info objectForKey:kCurrencyId];
+        return self;
+    }
+    return nil;
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

@@ -19,24 +19,35 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
+#import "EbayPaginationInput.h"
 
-@interface ViewController ()
+@implementation EbayPaginationInput
 
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad
+- (id)initWithInfo:(NSDictionary *)info
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self = [super init];
+    BOOL infoExists = IKNotNull(info);
+    
+    if (self && infoExists)
+    {
+        _entriesPerPage = [[info[kEntriesPerPage] objectAtIndex:0] integerValue];
+        _pageNumber = [[info[kPageNumber] objectAtIndex:0] integerValue];
+        
+        return self;
+    }
+    return nil;
 }
 
-- (void)didReceiveMemoryWarning
+- (id)initWithEntriesPerPage:(NSInteger)aEntriesPerPage pageNumber:(NSInteger)aPageNumber
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self = [super init];
+    
+    if (self)
+    {
+        _entriesPerPage = aEntriesPerPage;
+        _pageNumber = aPageNumber;
+    }
+    
+    return self;
 }
-
 @end

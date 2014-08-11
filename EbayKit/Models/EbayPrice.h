@@ -19,24 +19,13 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
+#import <Foundation/Foundation.h>
 
-@interface ViewController ()
+@interface EbayPrice : NSObject
 
-@end
+@property (nonatomic) CGFloat cost;
+@property (nonatomic) NSString* currency;
 
-@implementation ViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+- (id) initWithInfo:(NSDictionary*)info;
 
 @end

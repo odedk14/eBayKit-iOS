@@ -19,24 +19,17 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
+#import "EbayModel.h"
 
-@interface ViewController ()
+@implementation EbayModel
 
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad
+- (id)initWithInfo:(NSDictionary *)info
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self = [super init];
+    if (self && IKNotNull(info)) {
+        _itemId = [info[kItemID] objectAtIndex:0];
+    }
+    return self;
 }
 
 @end

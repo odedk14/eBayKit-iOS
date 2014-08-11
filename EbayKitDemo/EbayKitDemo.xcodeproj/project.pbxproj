@@ -21,6 +21,43 @@
 		0581BD20199917190012A7C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0581BD02199917190012A7C9 /* UIKit.framework */; };
 		0581BD28199917190012A7C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0581BD26199917190012A7C9 /* InfoPlist.strings */; };
 		0581BD2A199917190012A7C9 /* EbayKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD29199917190012A7C9 /* EbayKitDemoTests.m */; };
+		0581BD37199918C10012A7C9 /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD34199918C10012A7C9 /* ProductsViewController.m */; };
+		0581BD38199918C10012A7C9 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD36199918C10012A7C9 /* ProductTableViewCell.m */; };
+		0581BD51199918CD0012A7C9 /* EbayKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0581BD3A199918CD0012A7C9 /* EbayKit.plist */; };
+		0581BD52199918CD0012A7C9 /* EbayEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD3D199918CD0012A7C9 /* EbayEngine.m */; };
+		0581BD53199918CD0012A7C9 /* EbayCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD40199918CD0012A7C9 /* EbayCategory.m */; };
+		0581BD54199918CD0012A7C9 /* EbayListingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD42199918CD0012A7C9 /* EbayListingInfo.m */; };
+		0581BD55199918CD0012A7C9 /* EbayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD44199918CD0012A7C9 /* EbayModel.m */; };
+		0581BD56199918CD0012A7C9 /* EbayPaginationInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD46199918CD0012A7C9 /* EbayPaginationInput.m */; };
+		0581BD57199918CD0012A7C9 /* EbayPaginationOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD48199918CD0012A7C9 /* EbayPaginationOutput.m */; };
+		0581BD58199918CD0012A7C9 /* EbayPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD4A199918CD0012A7C9 /* EbayPrice.m */; };
+		0581BD59199918CD0012A7C9 /* EbayProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD4C199918CD0012A7C9 /* EbayProduct.m */; };
+		0581BD5A199918CD0012A7C9 /* EbaySellingStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD4E199918CD0012A7C9 /* EbaySellingStatus.m */; };
+		0581BD5B199918CD0012A7C9 /* EbayShippingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD50199918CD0012A7C9 /* EbayShippingInfo.m */; };
+		0581BD90199918D50012A7C9 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD5E199918D50012A7C9 /* AFHTTPRequestOperation.m */; };
+		0581BD91199918D50012A7C9 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD60199918D50012A7C9 /* AFHTTPRequestOperationManager.m */; };
+		0581BD92199918D50012A7C9 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD62199918D50012A7C9 /* AFHTTPSessionManager.m */; };
+		0581BD93199918D50012A7C9 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD65199918D50012A7C9 /* AFNetworkReachabilityManager.m */; };
+		0581BD94199918D50012A7C9 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD67199918D50012A7C9 /* AFSecurityPolicy.m */; };
+		0581BD95199918D50012A7C9 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD69199918D50012A7C9 /* AFURLConnectionOperation.m */; };
+		0581BD96199918D50012A7C9 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD6B199918D50012A7C9 /* AFURLRequestSerialization.m */; };
+		0581BD97199918D50012A7C9 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD6D199918D50012A7C9 /* AFURLResponseSerialization.m */; };
+		0581BD98199918D50012A7C9 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD6F199918D50012A7C9 /* AFURLSessionManager.m */; };
+		0581BD99199918D50012A7C9 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD71199918D50012A7C9 /* UIImageView+AFNetworking.m */; };
+		0581BD9A199918D50012A7C9 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD74199918D50012A7C9 /* MKAnnotationView+WebCache.m */; };
+		0581BD9B199918D50012A7C9 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD76199918D50012A7C9 /* NSData+ImageContentType.m */; };
+		0581BD9C199918D50012A7C9 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD78199918D50012A7C9 /* SDImageCache.m */; };
+		0581BD9D199918D50012A7C9 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD7A199918D50012A7C9 /* SDWebImageCompat.m */; };
+		0581BD9E199918D50012A7C9 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD7C199918D50012A7C9 /* SDWebImageDecoder.m */; };
+		0581BD9F199918D50012A7C9 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD7E199918D50012A7C9 /* SDWebImageDownloader.m */; };
+		0581BDA0199918D50012A7C9 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD80199918D50012A7C9 /* SDWebImageDownloaderOperation.m */; };
+		0581BDA1199918D50012A7C9 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD82199918D50012A7C9 /* SDWebImageManager.m */; };
+		0581BDA2199918D50012A7C9 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD85199918D50012A7C9 /* SDWebImagePrefetcher.m */; };
+		0581BDA3199918D50012A7C9 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD87199918D50012A7C9 /* UIButton+WebCache.m */; };
+		0581BDA4199918D50012A7C9 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD89199918D50012A7C9 /* UIImage+GIF.m */; };
+		0581BDA5199918D50012A7C9 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD8B199918D50012A7C9 /* UIImage+MultiFormat.m */; };
+		0581BDA6199918D50012A7C9 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD8D199918D50012A7C9 /* UIImage+WebP.m */; };
+		0581BDA7199918D50012A7C9 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD8F199918D50012A7C9 /* UIImageView+WebCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +90,81 @@
 		0581BD25199917190012A7C9 /* EbayKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EbayKitDemoTests-Info.plist"; sourceTree = "<group>"; };
 		0581BD27199917190012A7C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0581BD29199917190012A7C9 /* EbayKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EbayKitDemoTests.m; sourceTree = "<group>"; };
+		0581BD33199918C10012A7C9 /* ProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsViewController.h; sourceTree = "<group>"; };
+		0581BD34199918C10012A7C9 /* ProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsViewController.m; sourceTree = "<group>"; };
+		0581BD35199918C10012A7C9 /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		0581BD36199918C10012A7C9 /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		0581BD3A199918CD0012A7C9 /* EbayKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EbayKit.plist; sourceTree = "<group>"; };
+		0581BD3C199918CD0012A7C9 /* EbayEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayEngine.h; sourceTree = "<group>"; };
+		0581BD3D199918CD0012A7C9 /* EbayEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayEngine.m; sourceTree = "<group>"; };
+		0581BD3F199918CD0012A7C9 /* EbayCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayCategory.h; sourceTree = "<group>"; };
+		0581BD40199918CD0012A7C9 /* EbayCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayCategory.m; sourceTree = "<group>"; };
+		0581BD41199918CD0012A7C9 /* EbayListingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayListingInfo.h; sourceTree = "<group>"; };
+		0581BD42199918CD0012A7C9 /* EbayListingInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayListingInfo.m; sourceTree = "<group>"; };
+		0581BD43199918CD0012A7C9 /* EbayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayModel.h; sourceTree = "<group>"; };
+		0581BD44199918CD0012A7C9 /* EbayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayModel.m; sourceTree = "<group>"; };
+		0581BD45199918CD0012A7C9 /* EbayPaginationInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayPaginationInput.h; sourceTree = "<group>"; };
+		0581BD46199918CD0012A7C9 /* EbayPaginationInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayPaginationInput.m; sourceTree = "<group>"; };
+		0581BD47199918CD0012A7C9 /* EbayPaginationOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayPaginationOutput.h; sourceTree = "<group>"; };
+		0581BD48199918CD0012A7C9 /* EbayPaginationOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayPaginationOutput.m; sourceTree = "<group>"; };
+		0581BD49199918CD0012A7C9 /* EbayPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayPrice.h; sourceTree = "<group>"; };
+		0581BD4A199918CD0012A7C9 /* EbayPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayPrice.m; sourceTree = "<group>"; };
+		0581BD4B199918CD0012A7C9 /* EbayProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayProduct.h; sourceTree = "<group>"; };
+		0581BD4C199918CD0012A7C9 /* EbayProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayProduct.m; sourceTree = "<group>"; };
+		0581BD4D199918CD0012A7C9 /* EbaySellingStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbaySellingStatus.h; sourceTree = "<group>"; };
+		0581BD4E199918CD0012A7C9 /* EbaySellingStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbaySellingStatus.m; sourceTree = "<group>"; };
+		0581BD4F199918CD0012A7C9 /* EbayShippingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayShippingInfo.h; sourceTree = "<group>"; };
+		0581BD50199918CD0012A7C9 /* EbayShippingInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayShippingInfo.m; sourceTree = "<group>"; };
+		0581BD5D199918D50012A7C9 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		0581BD5E199918D50012A7C9 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		0581BD5F199918D50012A7C9 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		0581BD60199918D50012A7C9 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		0581BD61199918D50012A7C9 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		0581BD62199918D50012A7C9 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		0581BD63199918D50012A7C9 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		0581BD64199918D50012A7C9 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		0581BD65199918D50012A7C9 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		0581BD66199918D50012A7C9 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		0581BD67199918D50012A7C9 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		0581BD68199918D50012A7C9 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		0581BD69199918D50012A7C9 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		0581BD6A199918D50012A7C9 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		0581BD6B199918D50012A7C9 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		0581BD6C199918D50012A7C9 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		0581BD6D199918D50012A7C9 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		0581BD6E199918D50012A7C9 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		0581BD6F199918D50012A7C9 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		0581BD70199918D50012A7C9 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		0581BD71199918D50012A7C9 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		0581BD73199918D50012A7C9 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		0581BD74199918D50012A7C9 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		0581BD75199918D50012A7C9 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		0581BD76199918D50012A7C9 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		0581BD77199918D50012A7C9 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		0581BD78199918D50012A7C9 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		0581BD79199918D50012A7C9 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		0581BD7A199918D50012A7C9 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		0581BD7B199918D50012A7C9 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		0581BD7C199918D50012A7C9 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		0581BD7D199918D50012A7C9 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		0581BD7E199918D50012A7C9 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		0581BD7F199918D50012A7C9 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		0581BD80199918D50012A7C9 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		0581BD81199918D50012A7C9 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		0581BD82199918D50012A7C9 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		0581BD83199918D50012A7C9 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		0581BD84199918D50012A7C9 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		0581BD85199918D50012A7C9 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		0581BD86199918D50012A7C9 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		0581BD87199918D50012A7C9 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		0581BD88199918D50012A7C9 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		0581BD89199918D50012A7C9 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		0581BD8A199918D50012A7C9 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		0581BD8B199918D50012A7C9 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		0581BD8C199918D50012A7C9 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		0581BD8D199918D50012A7C9 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		0581BD8E199918D50012A7C9 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		0581BD8F199918D50012A7C9 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +194,9 @@
 		0581BCF2199917180012A7C9 = {
 			isa = PBXGroup;
 			children = (
+				0581BD5C199918D50012A7C9 /* AFNetworking */,
+				0581BD72199918D50012A7C9 /* SDWebImage */,
+				0581BD39199918CD0012A7C9 /* EbayKit */,
 				0581BD04199917190012A7C9 /* EbayKitDemo */,
 				0581BD23199917190012A7C9 /* EbayKitDemoTests */,
 				0581BCFD199917190012A7C9 /* Frameworks */,
@@ -112,6 +227,10 @@
 		0581BD04199917190012A7C9 /* EbayKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0581BD33199918C10012A7C9 /* ProductsViewController.h */,
+				0581BD34199918C10012A7C9 /* ProductsViewController.m */,
+				0581BD35199918C10012A7C9 /* ProductTableViewCell.h */,
+				0581BD36199918C10012A7C9 /* ProductTableViewCell.m */,
 				0581BD0D199917190012A7C9 /* AppDelegate.h */,
 				0581BD0E199917190012A7C9 /* AppDelegate.m */,
 				0581BD10199917190012A7C9 /* Main.storyboard */,
@@ -150,6 +269,115 @@
 				0581BD26199917190012A7C9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0581BD39199918CD0012A7C9 /* EbayKit */ = {
+			isa = PBXGroup;
+			children = (
+				0581BD3A199918CD0012A7C9 /* EbayKit.plist */,
+				0581BD3B199918CD0012A7C9 /* Engine */,
+				0581BD3E199918CD0012A7C9 /* Models */,
+			);
+			name = EbayKit;
+			path = ../EbayKit;
+			sourceTree = "<group>";
+		};
+		0581BD3B199918CD0012A7C9 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				0581BD3C199918CD0012A7C9 /* EbayEngine.h */,
+				0581BD3D199918CD0012A7C9 /* EbayEngine.m */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		0581BD3E199918CD0012A7C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0581BD3F199918CD0012A7C9 /* EbayCategory.h */,
+				0581BD40199918CD0012A7C9 /* EbayCategory.m */,
+				0581BD41199918CD0012A7C9 /* EbayListingInfo.h */,
+				0581BD42199918CD0012A7C9 /* EbayListingInfo.m */,
+				0581BD43199918CD0012A7C9 /* EbayModel.h */,
+				0581BD44199918CD0012A7C9 /* EbayModel.m */,
+				0581BD45199918CD0012A7C9 /* EbayPaginationInput.h */,
+				0581BD46199918CD0012A7C9 /* EbayPaginationInput.m */,
+				0581BD47199918CD0012A7C9 /* EbayPaginationOutput.h */,
+				0581BD48199918CD0012A7C9 /* EbayPaginationOutput.m */,
+				0581BD49199918CD0012A7C9 /* EbayPrice.h */,
+				0581BD4A199918CD0012A7C9 /* EbayPrice.m */,
+				0581BD4B199918CD0012A7C9 /* EbayProduct.h */,
+				0581BD4C199918CD0012A7C9 /* EbayProduct.m */,
+				0581BD4D199918CD0012A7C9 /* EbaySellingStatus.h */,
+				0581BD4E199918CD0012A7C9 /* EbaySellingStatus.m */,
+				0581BD4F199918CD0012A7C9 /* EbayShippingInfo.h */,
+				0581BD50199918CD0012A7C9 /* EbayShippingInfo.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0581BD5C199918D50012A7C9 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0581BD5D199918D50012A7C9 /* AFHTTPRequestOperation.h */,
+				0581BD5E199918D50012A7C9 /* AFHTTPRequestOperation.m */,
+				0581BD5F199918D50012A7C9 /* AFHTTPRequestOperationManager.h */,
+				0581BD60199918D50012A7C9 /* AFHTTPRequestOperationManager.m */,
+				0581BD61199918D50012A7C9 /* AFHTTPSessionManager.h */,
+				0581BD62199918D50012A7C9 /* AFHTTPSessionManager.m */,
+				0581BD63199918D50012A7C9 /* AFNetworking.h */,
+				0581BD64199918D50012A7C9 /* AFNetworkReachabilityManager.h */,
+				0581BD65199918D50012A7C9 /* AFNetworkReachabilityManager.m */,
+				0581BD66199918D50012A7C9 /* AFSecurityPolicy.h */,
+				0581BD67199918D50012A7C9 /* AFSecurityPolicy.m */,
+				0581BD68199918D50012A7C9 /* AFURLConnectionOperation.h */,
+				0581BD69199918D50012A7C9 /* AFURLConnectionOperation.m */,
+				0581BD6A199918D50012A7C9 /* AFURLRequestSerialization.h */,
+				0581BD6B199918D50012A7C9 /* AFURLRequestSerialization.m */,
+				0581BD6C199918D50012A7C9 /* AFURLResponseSerialization.h */,
+				0581BD6D199918D50012A7C9 /* AFURLResponseSerialization.m */,
+				0581BD6E199918D50012A7C9 /* AFURLSessionManager.h */,
+				0581BD6F199918D50012A7C9 /* AFURLSessionManager.m */,
+				0581BD70199918D50012A7C9 /* UIImageView+AFNetworking.h */,
+				0581BD71199918D50012A7C9 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		0581BD72199918D50012A7C9 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				0581BD73199918D50012A7C9 /* MKAnnotationView+WebCache.h */,
+				0581BD74199918D50012A7C9 /* MKAnnotationView+WebCache.m */,
+				0581BD75199918D50012A7C9 /* NSData+ImageContentType.h */,
+				0581BD76199918D50012A7C9 /* NSData+ImageContentType.m */,
+				0581BD77199918D50012A7C9 /* SDImageCache.h */,
+				0581BD78199918D50012A7C9 /* SDImageCache.m */,
+				0581BD79199918D50012A7C9 /* SDWebImageCompat.h */,
+				0581BD7A199918D50012A7C9 /* SDWebImageCompat.m */,
+				0581BD7B199918D50012A7C9 /* SDWebImageDecoder.h */,
+				0581BD7C199918D50012A7C9 /* SDWebImageDecoder.m */,
+				0581BD7D199918D50012A7C9 /* SDWebImageDownloader.h */,
+				0581BD7E199918D50012A7C9 /* SDWebImageDownloader.m */,
+				0581BD7F199918D50012A7C9 /* SDWebImageDownloaderOperation.h */,
+				0581BD80199918D50012A7C9 /* SDWebImageDownloaderOperation.m */,
+				0581BD81199918D50012A7C9 /* SDWebImageManager.h */,
+				0581BD82199918D50012A7C9 /* SDWebImageManager.m */,
+				0581BD83199918D50012A7C9 /* SDWebImageOperation.h */,
+				0581BD84199918D50012A7C9 /* SDWebImagePrefetcher.h */,
+				0581BD85199918D50012A7C9 /* SDWebImagePrefetcher.m */,
+				0581BD86199918D50012A7C9 /* UIButton+WebCache.h */,
+				0581BD87199918D50012A7C9 /* UIButton+WebCache.m */,
+				0581BD88199918D50012A7C9 /* UIImage+GIF.h */,
+				0581BD89199918D50012A7C9 /* UIImage+GIF.m */,
+				0581BD8A199918D50012A7C9 /* UIImage+MultiFormat.h */,
+				0581BD8B199918D50012A7C9 /* UIImage+MultiFormat.m */,
+				0581BD8C199918D50012A7C9 /* UIImage+WebP.h */,
+				0581BD8D199918D50012A7C9 /* UIImage+WebP.m */,
+				0581BD8E199918D50012A7C9 /* UIImageView+WebCache.h */,
+				0581BD8F199918D50012A7C9 /* UIImageView+WebCache.m */,
+			);
+			path = SDWebImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +456,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0581BD51199918CD0012A7C9 /* EbayKit.plist in Resources */,
 				0581BD17199917190012A7C9 /* Images.xcassets in Resources */,
 				0581BD09199917190012A7C9 /* InfoPlist.strings in Resources */,
 				0581BD12199917190012A7C9 /* Main.storyboard in Resources */,
@@ -249,9 +478,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0581BD53199918CD0012A7C9 /* EbayCategory.m in Sources */,
+				0581BD56199918CD0012A7C9 /* EbayPaginationInput.m in Sources */,
+				0581BD52199918CD0012A7C9 /* EbayEngine.m in Sources */,
+				0581BD92199918D50012A7C9 /* AFHTTPSessionManager.m in Sources */,
+				0581BD9B199918D50012A7C9 /* NSData+ImageContentType.m in Sources */,
 				0581BD15199917190012A7C9 /* ViewController.m in Sources */,
+				0581BD93199918D50012A7C9 /* AFNetworkReachabilityManager.m in Sources */,
+				0581BDA3199918D50012A7C9 /* UIButton+WebCache.m in Sources */,
+				0581BDA2199918D50012A7C9 /* SDWebImagePrefetcher.m in Sources */,
+				0581BD90199918D50012A7C9 /* AFHTTPRequestOperation.m in Sources */,
+				0581BD96199918D50012A7C9 /* AFURLRequestSerialization.m in Sources */,
+				0581BD95199918D50012A7C9 /* AFURLConnectionOperation.m in Sources */,
+				0581BD98199918D50012A7C9 /* AFURLSessionManager.m in Sources */,
+				0581BD55199918CD0012A7C9 /* EbayModel.m in Sources */,
+				0581BDA7199918D50012A7C9 /* UIImageView+WebCache.m in Sources */,
+				0581BDA1199918D50012A7C9 /* SDWebImageManager.m in Sources */,
+				0581BD99199918D50012A7C9 /* UIImageView+AFNetworking.m in Sources */,
+				0581BD5B199918CD0012A7C9 /* EbayShippingInfo.m in Sources */,
+				0581BD54199918CD0012A7C9 /* EbayListingInfo.m in Sources */,
+				0581BDA4199918D50012A7C9 /* UIImage+GIF.m in Sources */,
+				0581BD58199918CD0012A7C9 /* EbayPrice.m in Sources */,
+				0581BD5A199918CD0012A7C9 /* EbaySellingStatus.m in Sources */,
 				0581BD0F199917190012A7C9 /* AppDelegate.m in Sources */,
+				0581BDA5199918D50012A7C9 /* UIImage+MultiFormat.m in Sources */,
+				0581BDA0199918D50012A7C9 /* SDWebImageDownloaderOperation.m in Sources */,
+				0581BD37199918C10012A7C9 /* ProductsViewController.m in Sources */,
 				0581BD0B199917190012A7C9 /* main.m in Sources */,
+				0581BD57199918CD0012A7C9 /* EbayPaginationOutput.m in Sources */,
+				0581BD94199918D50012A7C9 /* AFSecurityPolicy.m in Sources */,
+				0581BD9E199918D50012A7C9 /* SDWebImageDecoder.m in Sources */,
+				0581BDA6199918D50012A7C9 /* UIImage+WebP.m in Sources */,
+				0581BD9D199918D50012A7C9 /* SDWebImageCompat.m in Sources */,
+				0581BD59199918CD0012A7C9 /* EbayProduct.m in Sources */,
+				0581BD91199918D50012A7C9 /* AFHTTPRequestOperationManager.m in Sources */,
+				0581BD9F199918D50012A7C9 /* SDWebImageDownloader.m in Sources */,
+				0581BD9A199918D50012A7C9 /* MKAnnotationView+WebCache.m in Sources */,
+				0581BD38199918C10012A7C9 /* ProductTableViewCell.m in Sources */,
+				0581BD97199918D50012A7C9 /* AFURLResponseSerialization.m in Sources */,
+				0581BD9C199918D50012A7C9 /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +721,7 @@
 				0581BD2F199917190012A7C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0581BD30199917190012A7C9 /* Build configuration list for PBXNativeTarget "EbayKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +730,7 @@
 				0581BD32199917190012A7C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -19,24 +19,36 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
+#import "ProductTableViewCell.h"
+#import "UIImageView+WebCache.h"
 
-@interface ViewController ()
+@implementation ProductTableViewCell
 
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        // Initialization code
+    }
+    return self;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)awakeFromNib
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)linkToProductClicked:(id)sender {
+    NSURL *url = [NSURL URLWithString:self.product.viewItemURL];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:url])
+        [[UIApplication sharedApplication] openURL:url];
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
 }
 
 @end

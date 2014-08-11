@@ -19,24 +19,13 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface ViewController ()
+@interface ProductsViewController : UITableViewController
 
-@end
+@property (strong, nonatomic) NSString* keywords;
+@property (nonatomic) BOOL includeSellerInfo;
 
-@implementation ViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+@property (strong, nonatomic) NSArray* products;
 
 @end

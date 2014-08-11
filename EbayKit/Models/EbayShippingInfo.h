@@ -19,24 +19,31 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
+#import <Foundation/Foundation.h>
+#import "EbayPrice.h"
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad
+typedef enum
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+    kEbayKitShippingTypeCalculated,
+    kEbayKitShippingTypeCalculatedDomesticFlatInternational,
+    kEbayKitShippingTypeFlat,
+    kEbayKitShippingTypeFlatDomesticCalculatedInternational,
+    kEbayKitShippingTypeFree,
+    kEbayKitShippingTypeFreePickup,
+    kEbayKitShippingTypeFreight,
+    kEbayKitShippingTypeFreightFlat,
+    kEbayKitShippingTypeNotSpecified,
+} EbayKitShippingType;
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+@interface EbayShippingInfo : NSObject
+
+@property (nonatomic, readonly) BOOL isExpeditedShipping;
+@property (nonatomic, readonly) NSInteger handlingTime;
+@property (nonatomic, readonly) BOOL isOneDayShippingAvailable;
+@property (nonatomic) NSArray* shipToLocations;
+@property (nonatomic) EbayKitShippingType shippingType;
+@property (nonatomic) EbayPrice* price;
+
+- (id) initWithInfo:(NSDictionary*)info;
 
 @end

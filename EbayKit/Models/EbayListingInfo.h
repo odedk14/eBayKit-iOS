@@ -19,24 +19,28 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
-
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad
+#import <Foundation/Foundation.h>
+#import "EbayPrice.h"
+typedef enum
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+    kEbayKitListingTypeAdFormat,
+    kEbayKitListingTypeAuction,
+    kEbayKitListingTypeAuctionWithBIN,
+    kEbayKitListingTypeClassified,
+    kEbayKitListingTypeFixedPrice,
+    
+} EbayKitListingType;
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+@interface EbayListingInfo : NSObject
+
+@property (nonatomic, readonly) BOOL isBestOfferEnabled;
+@property (nonatomic, readonly) BOOL isBuyItNowAvailable;
+@property (nonatomic, readonly) BOOL isGift;
+@property (nonatomic, readonly) NSDate* startTime;
+@property (nonatomic, readonly) NSDate* endTime;
+@property (nonatomic, readonly) EbayPrice* buyItNowPrice;
+@property (nonatomic, readonly) EbayKitListingType listingType;
+
+- (id) initWithInfo:(NSDictionary*)info;
 
 @end

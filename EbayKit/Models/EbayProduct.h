@@ -19,24 +19,35 @@
 //      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //      SOFTWARE.
 
-#import "ViewController.h"
+#import <Foundation/Foundation.h>
+#import "EbayModel.h"
+#import "EbayListingInfo.h"
+#import "EbayCategory.h"
+#import "EbayShippingInfo.h"
+#import "EbaySellingStatus.h"
 
-@interface ViewController ()
+@interface EbayProduct : EbayModel
 
-@end
+@property (nonatomic, readonly) BOOL isAutoPay;
+@property (nonatomic) NSString* country;
+@property (nonatomic) NSString* galleryPlusPictureURL;
+@property (nonatomic) NSString* galleryURL;
+@property (nonatomic) NSString* globalID;
+@property (nonatomic, readonly) BOOL isMultiVariationListing;
+@property (nonatomic) EbayListingInfo* listingInfo;
+@property (nonatomic) NSString* location;
+@property (nonatomic) NSArray* patmentMethods;
+@property (nonatomic) NSString* postalCode;
+@property (nonatomic) EbayCategory* primaryCategory;
+@property (nonatomic) EbayCategory* secondaryCategory;
+@property (nonatomic) EbayShippingInfo* shippingInfo;
+@property (nonatomic) EbaySellingStatus* sellingStatus;
 
-@implementation ViewController
+@property (nonatomic, readonly) BOOL isReturnAccepted;
+@property (nonatomic) NSString* title;
+@property (nonatomic, readonly) BOOL isTopRatedListing;
+@property (nonatomic) NSString* viewItemURL;
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+- (id) initWithInfo:(NSDictionary*)info;
 
 @end
