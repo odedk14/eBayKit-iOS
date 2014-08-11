@@ -16,5 +16,11 @@ Once you create your accout, grab the AppId eBay generates for you. You will nee
 Just copy the folder 'EbayKit' to your project.
 In EbayKit.plist, paste your AppId instead of <Client id here>.
 
-##Usage
+## Demo
+
+Download and run the Demo Project to understand how the engine is intended to be used.
+
+
+
+
 
