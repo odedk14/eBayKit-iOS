@@ -25,9 +25,11 @@
 #import "EbayProduct.h"
 #import "EbayModel.h"
 
+NSString *const kEbayKitOpenApiBaseUrlConfigurationKey = @"EbayKitOpenApiBaseUrl";
 NSString *const kEbayKitBaseUrlConfigurationKey = @"EbayKitBaseUrl";
 NSString *const kInstagramKitAppClientIdConfigurationKey = @"EbayKitAppClientID";
 
+NSString* const kEbayKitOpenApiBaseUrlDefault = @"http://open.api.ebay.com";
 NSString *const kEbayKitBaseUrlDefault = @"http://svcs.ebay.com/services/";
 //@"http://svcs.ebay.com/services/search/FindingService/v1?"
 
@@ -55,6 +57,16 @@ NSString *const kEbayKitBaseUrlDefault = @"http://svcs.ebay.com/services/";
     return _sharedEngine;
 }
 
++ (EbayEngine *)sharedShoppingEngine
+{
+    static EbayEngine *_sharedEngine = nil;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        _sharedEngine = [[EbayEngine alloc] initShopping];
+    });
+    return _sharedEngine;
+}
+
 + (NSDictionary*) sharedEngineConfiguration {
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"EbayKit" withExtension:@"plist"];
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfURL:url];
@@ -67,12 +79,12 @@ NSString *const kEbayKitBaseUrlDefault = @"http://svcs.ebay.com/services/";
     {
         NSDictionary *sharedEngineConfiguration = [EbayEngine sharedEngineConfiguration];
         id url = nil;
-        url = sharedEngineConfiguration[kEbayKitBaseUrlConfigurationKey];
+        url = sharedEngineConfiguration[kEbayKitBaseUrlConfigurationKey]; //
         
         if (url) {
             url = [NSURL URLWithString:url];
         } else {
-            url = [NSURL URLWithString:kEbayKitBaseUrlDefault];
+            url = [NSURL URLWithString:kEbayKitBaseUrlDefault]; // //kEbayKitOpenApiBaseUrlDefault
         }
         
         NSAssert(url, @"Base URL not valid: %@", sharedEngineConfiguration[kEbayKitBaseUrlConfigurationKey]);
@@ -82,7 +94,8 @@ NSString *const kEbayKitBaseUrlDefault = @"http://svcs.ebay.com/services/";
         
         mBackgroundQueue = dispatch_queue_create("background", NULL);
         self.operationManager.responseSerializer = [AFJSONResponseSerializer serializer];
-        self.operationManager.responseSerializer.acceptableContentTypes = [self.operationManager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/plain"];
+        
+        self.operationManager.responseSerializer.acceptableContentTypes = [self.operationManager.responseSerializer.acceptableContentTypes setByAddingObjectsFromArray:@[@"text/plain", @"text/xml"]];
         
         BOOL validClientId = IKNotNull(self.appClientID) && ![self.appClientID isEqualToString:@""] && ![self.appClientID isEqualToString:@"<Client Id here>"];
         NSAssert(validClientId, @"Invalid Ebay Client ID.");
@@ -90,7 +103,35 @@ NSString *const kEbayKitBaseUrlDefault = @"http://svcs.ebay.com/services/";
     return self;
 }
 
-
+- (id) initShopping
+{
+    if (self = [super init])
+    {
+        NSDictionary *sharedEngineConfiguration = [EbayEngine sharedEngineConfiguration];
+        id url = nil;
+        url = sharedEngineConfiguration[kEbayKitOpenApiBaseUrlConfigurationKey]; //kEbayKitBaseUrlConfigurationKey
+        
+        if (url) {
+            url = [NSURL URLWithString:url];
+        } else {
+            url = [NSURL URLWithString:kEbayKitOpenApiBaseUrlDefault]; //kEbayKitBaseUrlDefault //kEbayKitOpenApiBaseUrlDefault
+        }
+        
+        NSAssert(url, @"Base URL not valid: %@", sharedEngineConfiguration[kEbayKitBaseUrlConfigurationKey]);
+        self.operationManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:url];
+        
+        self.appClientID =  sharedEngineConfiguration[kInstagramKitAppClientIdConfigurationKey];
+        
+        mBackgroundQueue = dispatch_queue_create("background", NULL);
+        self.operationManager.responseSerializer = [AFJSONResponseSerializer serializer];
+        
+        self.operationManager.responseSerializer.acceptableContentTypes = [self.operationManager.responseSerializer.acceptableContentTypes setByAddingObjectsFromArray:@[@"text/plain", @"text/xml"]];
+        
+        BOOL validClientId = IKNotNull(self.appClientID) && ![self.appClientID isEqualToString:@""] && ![self.appClientID isEqualToString:@"<Client Id here>"];
+        NSAssert(validClientId, @"Invalid Ebay Client ID.");
+    }
+    return self;
+}
 
 
 //Check http://developer.ebay.com/Devzone/finding/CallRef/types/ItemFilterType.html for more info about itemFilter
@@ -182,6 +223,43 @@ NSString *const kEbayKitBaseUrlDefault = @"http://svcs.ebay.com/services/";
                        failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                            failure(error);
                            
+                       }];
+}
+
+#pragma mark -
+#pragma mark - Shopping API
+
+- (void)getCategoryInfoWithCategoryID:(NSInteger)categoryID
+                          withSuccess:(EbayCategoriesBlock)success
+                              failure:(EbayFailureBlock)failure
+{
+    NSMutableDictionary* params = [NSMutableDictionary dictionary];
+    
+    [params setObject:@"GetCategoryInfo" forKey:@"callname"];
+    [params setObject:self.appClientID forKey:@"appid"];
+    [params setObject:@"JSON" forKey:@"requestencoding"];
+    [params setObject:@"785" forKey:@"version"];
+    [params setObject:@"JSON" forKey:@"responseencoding"];
+    [params setObject:[NSString stringWithFormat:@"%d", categoryID] forKey:@"CategoryID"];
+    [params setObject:@"ChildCategories" forKey:@"IncludeSelector"];
+    
+    
+    [self.operationManager GET:@"Shopping"
+                    parameters:params
+                       success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                           NSDictionary* dictionary = [NSDictionary dictionaryWithDictionary:responseObject];
+                           NSArray* categoriesResponse = [[dictionary objectForKey:@"CategoryArray"] valueForKey:@"Category"];
+                           
+                           NSMutableArray* categories = [NSMutableArray array];
+                           for (NSDictionary* singleCategoryDic in categoriesResponse) {
+                               EbayCategory* category = [[EbayCategory alloc] initWithCategoryInfo:singleCategoryDic];
+                               [categories addObject:category];
+                           }
+                           
+                           success(categories);
+                       }
+                       failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                           failure(error);
                        }];
 }
 

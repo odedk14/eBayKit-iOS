@@ -23,6 +23,7 @@
 #import "EbayPaginationOutput.h"
 
 typedef void(^EbayProductsBlock)(NSArray *products, EbayPaginationOutput* paginationOutput);
+typedef void(^EbayCategoriesBlock)(NSArray *categories);
 typedef void (^EbayFailureBlock)(NSError* error);
 
 typedef enum
@@ -44,6 +45,7 @@ typedef enum
 @interface EbayEngine : NSObject
 
 + (EbayEngine *)sharedEngine;
++ (EbayEngine *)sharedShoppingEngine;
 + (NSDictionary*)sharedEngineConfiguration;
 
 @property (nonatomic, copy) NSString *appClientID;
@@ -56,5 +58,14 @@ typedef enum
                   outputSelector:(NSArray*)outputSelector
                      withSuccess:(EbayProductsBlock)success
                          failure:(EbayFailureBlock)failure;
+
+#pragma mark - 
+#pragma mark - Shopping API
+
+- (void) getCategoryInfoWithCategoryID:(NSInteger)categoryID
+                           withSuccess:(EbayCategoriesBlock)success
+                               failure:(EbayFailureBlock)failure;
+
+
 
 @end

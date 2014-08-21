@@ -26,6 +26,14 @@
 @property (nonatomic) NSString* categoryId;
 @property (nonatomic) NSString* categoryName;
 
+@property (nonatomic) NSString* categoryIdPath;
+@property (nonatomic) NSString* categoryNamePath;
+
+@property (nonatomic) NSInteger categoryLevel;
+@property (nonatomic) NSString* categoryParentId;
+@property (nonatomic) BOOL isLeaf;
+
 - (id) initWithInfo:(NSDictionary*)info;
+- (id) initWithCategoryInfo:(NSDictionary*)info;
 
 @end

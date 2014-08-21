@@ -36,6 +36,25 @@
         return self;
     }
     return nil;
-    
 }
+
+- (id)initWithCategoryInfo:(NSDictionary *)info
+{
+    self = [super init];
+    BOOL infoExists = IKNotNull(info);
+    
+    if (self && infoExists)
+    {
+        _categoryId = info[kEbayCategoryID];
+        _categoryName = info[kEbayCategoryName];
+        _categoryIdPath = info[kEbayCategoryIDPath];
+        _categoryNamePath = info[kEbayCategoryNamePath];
+        _categoryLevel = [info[kEbayCategoryLevel] intValue];
+        _categoryParentId = info[kEbayCategoryParentID];
+        _isLeaf = [info[kEbayLeafCategory] boolValue];
+        return self;
+    }
+    return nil;
+}
+
 @end

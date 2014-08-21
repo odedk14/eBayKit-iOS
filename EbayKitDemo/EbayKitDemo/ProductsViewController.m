@@ -44,6 +44,15 @@
 {
     [super viewDidLoad];
     
+    
+    [[EbayEngine sharedEngine] getCategoryInfoWithCategoryID:1249
+                                                 withSuccess:^(NSArray *categories) {
+                                                     
+                                                 }
+                                                     failure:^(NSError *error) {
+                                                         
+                                                     }];
+    /*
     NSDictionary* filter = @{@"ListingType": @[@"Auction"]};
     
     NSArray* outputSelector = self.includeSellerInfo ? @[@"SellerInfo"] : nil;
@@ -64,6 +73,7 @@
                                                failure:^(NSError *error) {
                                                    NSLog(@"%@", error);
                                                }];
+     */
 }
 
 - (void)didReceiveMemoryWarning

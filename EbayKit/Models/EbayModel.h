@@ -66,6 +66,14 @@
 #define kCategoryId @"categoryId"
 #define kCategoryName @"categoryName"
 
+#define kEbayCategoryID @"CategoryID"
+#define kEbayCategoryName @"CategoryName"
+#define kEbayCategoryParentID @"CategoryParentID"
+#define kEbayLeafCategory @"LeafCategory"
+#define kEbayCategoryIDPath @"CategoryIDPath"
+#define kEbayCategoryNamePath @"CategoryNamePath"
+#define kEbayCategoryLevel @"CategoryLevel"
+
 #define kExpeditedShipping @"expeditedShipping"
 #define kHandlingTime @"handlingTime"
 #define kOneDayShippingAvailable @"oneDayShippingAvailable"

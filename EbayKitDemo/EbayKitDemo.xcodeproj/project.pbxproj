@@ -58,6 +58,8 @@
 		0581BDA5199918D50012A7C9 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD8B199918D50012A7C9 /* UIImage+MultiFormat.m */; };
 		0581BDA6199918D50012A7C9 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD8D199918D50012A7C9 /* UIImage+WebP.m */; };
 		0581BDA7199918D50012A7C9 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581BD8F199918D50012A7C9 /* UIImageView+WebCache.m */; };
+		05DA005D19A11A86000CB79C /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA005C19A11A86000CB79C /* CategoriesViewController.m */; };
+		05DA006019A12112000CB79C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA005F19A12112000CB79C /* MenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +167,10 @@
 		0581BD8D199918D50012A7C9 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
 		0581BD8E199918D50012A7C9 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		0581BD8F199918D50012A7C9 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		05DA005B19A11A86000CB79C /* CategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesViewController.h; sourceTree = "<group>"; };
+		05DA005C19A11A86000CB79C /* CategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesViewController.m; sourceTree = "<group>"; };
+		05DA005E19A12112000CB79C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		05DA005F19A12112000CB79C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +244,10 @@
 				0581BD14199917190012A7C9 /* ViewController.m */,
 				0581BD16199917190012A7C9 /* Images.xcassets */,
 				0581BD05199917190012A7C9 /* Supporting Files */,
+				05DA005B19A11A86000CB79C /* CategoriesViewController.h */,
+				05DA005C19A11A86000CB79C /* CategoriesViewController.m */,
+				05DA005E19A12112000CB79C /* MenuViewController.h */,
+				05DA005F19A12112000CB79C /* MenuViewController.m */,
 			);
 			path = EbayKitDemo;
 			sourceTree = "<group>";
@@ -496,6 +506,7 @@
 				0581BDA1199918D50012A7C9 /* SDWebImageManager.m in Sources */,
 				0581BD99199918D50012A7C9 /* UIImageView+AFNetworking.m in Sources */,
 				0581BD5B199918CD0012A7C9 /* EbayShippingInfo.m in Sources */,
+				05DA005D19A11A86000CB79C /* CategoriesViewController.m in Sources */,
 				0581BD54199918CD0012A7C9 /* EbayListingInfo.m in Sources */,
 				0581BDA4199918D50012A7C9 /* UIImage+GIF.m in Sources */,
 				0581BD58199918CD0012A7C9 /* EbayPrice.m in Sources */,
@@ -508,6 +519,7 @@
 				0581BD57199918CD0012A7C9 /* EbayPaginationOutput.m in Sources */,
 				0581BD94199918D50012A7C9 /* AFSecurityPolicy.m in Sources */,
 				0581BD9E199918D50012A7C9 /* SDWebImageDecoder.m in Sources */,
+				05DA006019A12112000CB79C /* MenuViewController.m in Sources */,
 				0581BDA6199918D50012A7C9 /* UIImage+WebP.m in Sources */,
 				0581BD9D199918D50012A7C9 /* SDWebImageCompat.m in Sources */,
 				0581BD59199918CD0012A7C9 /* EbayProduct.m in Sources */,
