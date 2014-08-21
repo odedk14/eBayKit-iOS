@@ -8,6 +8,11 @@ It’s neat, fast and works like a charm providing an easy interface to interact
 
 The only method which is implemented is the eBay method "findItemsAdvanced", which allows the user to get all product information. If I forgot something, just let me know and I will add it / fix it.
 
+##Update 
+
+Added the eBay method "GetCategoryInfo". You can use it to get all the products categories in eBay and sub0categories.
+See the demo project for help. It's really easy to use.
+
 ###Installation
 
 First, you will need to create a developer account on eBay (https://developer.ebay.com).
